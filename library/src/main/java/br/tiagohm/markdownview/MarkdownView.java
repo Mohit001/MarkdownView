@@ -226,8 +226,7 @@ public class MarkdownView extends WebView {
         return renderer.render(parser.parse(text));
     }
 
-    String html = "";
-
+    public String html = "";
 
     public void loadMarkdown(String text) {
         html = parseBuildAndRender(text);

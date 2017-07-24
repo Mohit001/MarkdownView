@@ -255,6 +255,11 @@ public class MarkdownView extends WebView {
         html = sb.toString();
     }
 
+    public void cleanContent() {
+        html = "";
+        show();
+    }
+
     public void show() {
         loadDataWithBaseURL("",
                 html,

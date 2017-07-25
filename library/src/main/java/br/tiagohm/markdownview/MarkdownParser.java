@@ -152,7 +152,7 @@ public class MarkdownParser {
 
         html = sb.toString();
         long duration = System.currentTimeMillis() - start;
-        Log.i("MarkdownParser", "-----> Markdown Parsing time: " + duration);
+        Log.i("MarkdownParser", "----> Markdown Parsing time: " + duration);
         return html;
     }
 

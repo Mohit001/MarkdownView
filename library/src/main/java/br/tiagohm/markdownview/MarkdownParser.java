@@ -96,7 +96,8 @@ public class MarkdownParser {
     private final HashSet<JavaScript> mScripts = new LinkedHashSet<>();
     private boolean mEscapeHtml = true;
 
-    private String parseBuildAndRender(String text) {
+     public String parseBuildAndRender(String text) {
+         setEscapeHtml(false);
         Parser parser = Parser.builder(OPTIONS)
                 .extensions(EXTENSIONS)
                 .build();
